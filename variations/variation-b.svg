@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Pelican on a bicycle - variation B, "Over the top"</title>
+  <!-- Hand-authored. viewBox 512 = 2x the guide's 256 reference, so every guide
+       number is doubled: stroke 12, eye dot 10-14, eye spacing 48-64,
+       brow 32-48, mouth 36-56, visible-gap floor 12, meaningful-shape floor 16. -->
+
+  <g id="environment">
+    <rect id="sky" x="0" y="0" width="512" height="512" fill="#8DD5F0"/>
+
+    <g id="cloud" fill="#FFF9E8">
+      <rect x="10" y="48" width="96" height="26" rx="13"/>
+      <circle cx="36" cy="50" r="20"/>
+      <circle cx="68" cy="38" r="24"/>
+      <circle cx="94" cy="52" r="18"/>
+    </g>
+
+    <path id="hill" fill="#6FBE74"
+      d="M 512 512 L 0 512 L 0 486
+         C 30 470, 66 440, 110 408
+         C 136 388, 174 376, 206 374
+         C 296 372, 406 376, 512 386 Z"/>
+
+    <g id="grass-tufts" fill="#6FBE74">
+      <path d="M 32 474 C 11 451, 12 428, 24 428 C 36 428, 43 456, 45 474 Z"/>
+      <path d="M 52 476 C 39 447, 42 418, 54 418 C 66 418, 67 453, 67 476 Z"/>
+      <path d="M 72 474 C 71 452, 73 430, 84 430 C 95 430, 88 457, 85 474 Z"/>
+      <path d="M 278 396 C 257 377, 258 357, 270 357 C 282 357, 289 381, 291 396 Z"/>
+      <path d="M 298 398 C 285 374, 288 349, 300 349 C 312 349, 313 379, 313 398 Z"/>
+      <path d="M 318 396 C 317 378, 319 359, 330 359 C 341 359, 334 382, 331 396 Z"/>
+      <path d="M 448 404 C 427 383, 428 361, 440 361 C 452 361, 459 387, 461 404 Z"/>
+      <path d="M 468 406 C 455 379, 458 351, 470 351 C 482 351, 483 384, 483 406 Z"/>
+      <path d="M 488 404 C 487 384, 489 363, 500 363 C 511 363, 504 388, 501 404 Z"/>
+    </g>
+  </g>
+
+  <g id="bicycle" stroke-linecap="round" stroke-linejoin="round">
+
+    <g id="bicycle-tyres" fill="#233047" fill-rule="evenodd">
+      <path id="tyre-rear"
+        d="M 338 322 A 56 56 0 0 1 450 322 A 56 56 0 0 1 338 322 Z
+           M 354 322 A 40 40 0 0 1 434 322 A 40 40 0 0 1 354 322 Z"/>
+      <path id="tyre-front"
+        d="M 148 318 A 56 56 0 0 1 260 318 A 56 56 0 0 1 148 318 Z
+           M 164 318 A 40 40 0 0 1 244 318 A 40 40 0 0 1 164 318 Z"/>
+    </g>
+
+    <rect id="bicycle-saddle" x="345" y="234" width="66" height="32" rx="16"
+          fill="#E94D73" stroke="#233047" stroke-width="12"
+          transform="rotate(-12 378 250)"/>
+
+    <g id="bicycle-frame" fill="none">
+      <g id="frame-ink" stroke="#233047" stroke-width="30">
+        <path d="M 230 274 L 236 252"/>
+        <path d="M 236 252 L 236 206"/>
+        <path d="M 230 274 L 204 318"/>
+        <path d="M 230 274 L 301 327"/>
+        <path d="M 236 252 L 340 288"/>
+        <path d="M 301 327 L 372 256"/>
+        <path d="M 372 256 L 394 322"/>
+        <path d="M 301 327 L 394 322"/>
+      </g>
+      <g id="frame-cobalt" stroke="#2E6FCD" stroke-width="18">
+        <path d="M 230 274 L 236 252"/>
+        <path d="M 236 252 L 236 206"/>
+        <path d="M 230 274 L 204 318"/>
+        <path d="M 230 274 L 301 327"/>
+        <path d="M 301 327 L 372 256"/>
+        <path d="M 372 256 L 394 322"/>
+        <path d="M 301 327 L 394 322"/>
+        <path d="M 236 252 L 340 288"/>
+      </g>
+    </g>
+
+    <g id="bicycle-handlebar" fill="none">
+      <g stroke="#233047" stroke-width="30">
+        <path d="M 236 206 Q 216 192, 198 189"/>
+        <path d="M 236 206 Q 258 218, 270 240"/>
+      </g>
+      <g stroke="#2E6FCD" stroke-width="18">
+        <path d="M 236 206 Q 216 192, 198 189"/>
+        <path d="M 236 206 Q 258 218, 270 240"/>
+      </g>
+    </g>
+
+    <g id="bicycle-grips" fill="#E94D73" stroke="#233047" stroke-width="12">
+      <rect id="grip-far"  x="182" y="175" width="40" height="30" rx="15"
+            transform="rotate(-16 202 190)"/>
+      <rect id="grip-near" x="237" y="214" width="48" height="34" rx="17"
+            transform="rotate(50 261 231)"/>
+    </g>
+
+    <g id="bicycle-crank">
+      <g fill="none" stroke="#233047" stroke-width="28">
+        <path d="M 301 327 L 255 327"/>
+        <path d="M 301 327 L 347 327"/>
+      </g>
+      <g fill="none" stroke="#2E6FCD" stroke-width="16">
+        <path d="M 301 327 L 255 327"/>
+        <path d="M 301 327 L 347 327"/>
+      </g>
+      <circle cx="301" cy="327" r="32" fill="#2E6FCD" stroke="#233047" stroke-width="12"/>
+      <circle cx="301" cy="327" r="6" fill="#233047"/>
+    </g>
+
+    <g id="bicycle-hubs" fill="#FFD24A" stroke="#233047" stroke-width="12">
+      <circle id="hub-rear"  cx="394" cy="322" r="15"/>
+      <circle id="hub-front" cx="204" cy="318" r="15"/>
+    </g>
+
+    <g id="bicycle-pedal-caps" fill="#FFD24A" stroke="#233047" stroke-width="12">
+      <ellipse id="pedal-cap-front" cx="255" cy="327" rx="28" ry="15"/>
+      <ellipse id="pedal-cap-rear"  cx="347" cy="327" rx="28" ry="15"/>
+    </g>
+  </g>
+
+  <g id="pelican" stroke-linecap="round" stroke-linejoin="round">
+
+    <path id="pelican-far-leg" fill="#FFF1C9" stroke="#233047" stroke-width="12"
+          d="M 328 248 L 334 294 L 327 294 A 9 9 0 0 0 327 312
+             L 368 312 A 9 9 0 0 0 368 294 L 362 248 Z"/>
+
+    <g id="pelican-far-wing" fill="none">
+      <path d="M 296 176 Q 254 162, 218 186" stroke="#233047" stroke-width="34"/>
+      <path d="M 296 176 Q 254 162, 218 186" stroke="#FFF1C9" stroke-width="22"/>
+    </g>
+
+    <ellipse id="pelican-body" cx="322" cy="222" rx="52" ry="52"
+             transform="rotate(-9 322 222)"
+             fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+
+    <path id="pelican-tail" fill="#FFF1C9" stroke="#233047" stroke-width="12"
+          d="M 352 240 C 366 230, 374 214, 374 196
+             C 388 216, 384 250, 362 268 Z"/>
+
+    <path id="pelican-body-shadow" fill="#E9C98A"
+          d="M 299 262 A 46 46 0 0 0 338 265 L 331 246 A 26 26 0 0 1 309 245 Z"/>
+
+    <g id="pelican-neck" fill="none">
+      <path d="M 314 184 Q 302 150, 290 118" stroke="#233047" stroke-width="40"/>
+      <path d="M 314 184 Q 302 150, 290 118" stroke="#FFF1C9" stroke-width="28"/>
+    </g>
+
+    <ellipse id="pelican-head" cx="276" cy="104" rx="60" ry="52"
+             fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+
+    <path id="pelican-pouch" fill="#F6A14D" stroke="#233047" stroke-width="12"
+          d="M 244 134 C 250 162, 226 182, 196 176
+             C 166 170, 138 134, 132 86
+             C 168 102, 210 126, 244 134 Z"/>
+
+    <path id="pelican-bill" fill="#F47B59" stroke="#233047" stroke-width="12"
+          d="M 242 102 C 204 88, 160 74, 134 74
+             C 120 74, 118 88, 132 92
+             C 168 102, 210 126, 244 134 Z"/>
+
+    <g id="pelican-face">
+      <circle cx="252" cy="86" r="6" fill="#233047"/>
+      <circle cx="300" cy="86" r="6" fill="#233047"/>
+      <path id="brow-far"  fill="#233047" d="M 236 76 Q 252 60, 268 70 Q 252 78, 236 76 Z"/>
+      <path id="brow-near" fill="#233047" d="M 316 76 Q 300 60, 284 70 Q 300 78, 316 76 Z"/>
+      <path id="mouth" fill="#233047"
+            d="M 176 135 Q 197 142, 217 151 Q 197 166, 176 135 Z"/>
+    </g>
+
+    <g id="pelican-near-leg" fill="none">
+      <path d="M 296 250 Q 276 268, 258 280" stroke="#233047" stroke-width="34"/>
+      <path d="M 296 250 Q 276 268, 258 280" stroke="#FFF1C9" stroke-width="22"/>
+    </g>
+    <rect id="pelican-near-foot" x="236" y="276" width="58" height="30" rx="15"
+          fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+
+    <g id="pelican-near-wing" fill="none">
+      <path d="M 306 222 Q 294 232, 280 240" stroke="#233047" stroke-width="34"/>
+      <path d="M 306 222 Q 294 232, 280 240" stroke="#FFF1C9" stroke-width="22"/>
+    </g>
+  </g>
+</svg>
