@@ -70,3 +70,42 @@ repair is to deliver the file as a real task attachment with its hash, not as a 
 The task brief said to create a `Docs/` directory. This repository already uses lowercase `docs/`.
 The repository's own convention is followed, rather than create a case-colliding sibling directory
 that breaks clones on macOS and Windows.
+
+---
+
+## Addendum — the peer verification FAILED the page, and all four faults are repaired
+
+Written in the same task, minutes after the note above.
+
+Kumar's peer verification ran and **failed** the comparison page on four checks. That is the correct
+outcome: he found four faults in a page I had already published, fetched back from its own link, and
+checked myself. Two of them I had reported as sound.
+
+| # | Finding | Cause, measured | Repair | Verified on the fetched live copy |
+|---|---|---|---|---|
+| 1 | 51 px overflow at a 320 px viewport | `table.small` min-content width 328 px; `.thumbs` 316 px | a `max-width:560px` block with `table-layout:fixed`, `overflow-wrap:anywhere` and `flex-wrap:wrap` | `scrollWidth - clientWidth` = 0 at 320, 360, 768, 1280 |
+| 2 | Title and H1 commanded "choose the winning drawing" | the header was not rewritten when the body was corrected | both read "variation A and variation B side by side" | command string count 0 |
+| 3 | The hold notice still invited the choice to reopen | the offer was written into the page as well as the venue | invitation deleted | invitation absent |
+| 4 | A caption claimed a 4x enlargement and measured 3x | the `max-width:880px` rule shrank the image to 192 px, so the claim was false across a 320-pixel-wide band of viewports, not only on mobile | the shrink is deleted and the row wraps instead | rendered ratio 4.0 at 320, 360, 480, 768, 1280 |
+
+Four edits, nothing else. Both inline drawings are byte-identical across the repair, hashed before and
+after. No score, total, checksum or justification moved.
+
+Published in place with `dw share replace-content`, so one link and one output row. Fetched back from
+the live link and byte-identical to what was built:
+
+    SHA-256 2bcab2ceecdbaad2e2f26b0f37d11327c8353354b96f002a596db44f6c7af9ff
+
+### The two lessons this addendum exists to carry
+
+**A repair needs its own measurement, taken after the repair, on the artefact that is actually
+served.** My first fix for fault 4 set the enlargement to 150 px on mobile, which would have made the
+4x claim false by a wider margin than the 3x that was reported — a worse version of the fault, shipped
+in the change that claimed to fix it. It was caught only by measuring the rendered ratio at five
+viewports rather than trusting that the CSS had done what was intended. A diff proves what you
+changed; it does not prove what you achieved.
+
+**Get a review chain's dependencies right at creation time.** `dw task create` cannot add a
+`--depends-on` to an existing task, and no `dw task` subcommand edits one. The handoff task had to be
+cancelled and re-created to wait on the re-verification as well as on the Route C score. The only
+correction available is cancel-and-recreate.
