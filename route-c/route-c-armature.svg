@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><rect width="512" height="512" fill="#8DD5F0"/>
+<g id="construction" fill="none" stroke="#233047" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<path id="gesture-line" d="M205 142 Q250 220 286 310" stroke="#E94D73"/>
+<path id="shoulder-line" d="M204 222 L258 234"/><path id="hip-line" d="M226 292 L281 301"/>
+<path id="arm-near" d="M246 234 L297 254 L350 226"/><circle id="elbow-near" cx="297" cy="254" r="8" fill="#FFD24A"/><circle id="hand-near" cx="350" cy="226" r="8" fill="#FFD24A"/>
+<path id="leg-near" d="M260 300 L300 335 L324 362"/><circle id="knee-near" cx="300" cy="335" r="8" fill="#FFD24A"/><circle id="foot-near" cx="324" cy="362" r="8" fill="#FFD24A"/>
+<path id="bike-triangle" d="M215 325 L310 325 L270 382 Z M310 325 L370 260 L390 382" stroke="#2E6FCD"/>
+<circle id="wheel-rear-centre" cx="170" cy="382" r="58"/><circle id="wheel-front-centre" cx="390" cy="382" r="58"/>
+<circle id="bottom-bracket" cx="270" cy="382" r="22"/><path id="crank" d="M270 382 L324 362"/><path id="seat-to-bb" d="M215 325 L270 382"/><path id="handlebar" d="M370 260 L350 226"/>
+</g><g fill="#FFF1C9" stroke="#233047" stroke-width="6"><ellipse id="head-mass" cx="188" cy="160" rx="62" ry="54"/><ellipse id="body-mass" cx="238" cy="260" rx="72" ry="50"/></g></svg>
