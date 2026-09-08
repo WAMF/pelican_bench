@@ -1,0 +1,2 @@
+7cb7f6ad45d6743bedbe8d6c7ca941f0c671510a547ebaa3e8e7278824d42339  variations/variation-a.svg
+513b6923b8ba98642089d40fbfe404c5b15b82068ed820be68c7b3cfef1d24f4  variations/variation-b.svg

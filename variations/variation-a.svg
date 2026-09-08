@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Variation A - Still climbing - pelican on a bicycle, mid-climb, pure side view</title>
+
+  <!-- ================================================================
+       Variation A, "Still climbing".  Riker.
+
+       viewBox 512 x 512 = 2x the 256 unit reference viewBox of the style guide,
+       so every guide number is read at 2x:
+         ink stroke 12 | min corner radius 24 | eye dots 10-14
+         eye centres 48-64 | brow arcs 32-48 | mouth arc 36-56
+         min visible gap 12 | min meaningful colour shape 16
+
+       Every ink stroke in this file is exactly 12 and straddles the edge it
+       outlines, so it shows 6 outside the shape.  A tube is therefore drawn as
+       an ink path of (core + 12) with the coloured core on top: 32/20 for the
+       frame, 40/28 for the legs, and 12 as a plain outline on the filled wing and
+       on every capsule.  The two crank arms are a plain 20 unit ink bar, no core.
+
+       Ground line (0,444) to (512,496): 52 over 512 = 5.8 deg, rising left.
+       Front hub (106,374) r81.  Rear hub (406,405) r81.  Wheelbase 300.
+       Bottom bracket (261,400): the near crank is at the bottom of its stroke
+       and the far crank at the top, exactly opposite, each joined to its own
+       pedal cap.
+       ================================================================ -->
+
+  <g id="sky">
+    <rect x="0" y="0" width="512" height="512" fill="#8DD5F0"/>
+  </g>
+
+  <g id="cloud">
+    <!-- one cloud only, cut by the top edge, inside the top third -->
+    <circle cx="342" cy="44" r="34" fill="#FFF9E8"/>
+    <circle cx="398" cy="30" r="44" fill="#FFF9E8"/>
+    <circle cx="450" cy="52" r="30" fill="#FFF9E8"/>
+    <rect x="308" y="44" width="172" height="50" rx="25" fill="#FFF9E8"/>
+  </g>
+
+  <g id="hill">
+    <path fill="#6FBE74" d="M 0 444 L 512 496 L 512 512 L 0 512 Z"/>
+  </g>
+
+  <g id="grass-tufts">
+    <g id="tuft-1">
+      <path fill="#6FBE74" d="M 44 452 q 2 -34 14 -46 q 4 18 -2 46 z"/>
+      <path fill="#6FBE74" d="M 50 452 q -2 -30 12 -42 q 6 16 2 42 z"/>
+      <path fill="#6FBE74" d="M 58 453 q 6 -24 20 -30 q 2 16 8 32 z"/>
+    </g>
+    <g id="tuft-2">
+      <path fill="#6FBE74" d="M 294 477 q 2 -32 14 -44 q 4 18 -2 44 z"/>
+      <path fill="#6FBE74" d="M 310 477 q -2 -28 10 -40 q 6 16 0 40 z"/>
+      <path fill="#6FBE74" d="M 324 478 q 6 -22 20 -28 q -2 15 -8 28 z"/>
+    </g>
+    <g id="tuft-3">
+      <path fill="#6FBE74" d="M 470 493 q 2 -28 14 -38 q 4 16 -2 38 z"/>
+      <path fill="#6FBE74" d="M 486 494 q -2 -24 10 -34 q 6 14 0 34 z"/>
+      <path fill="#6FBE74" d="M 500 494 q 6 -18 12 -22 l 0 22 z"/>
+    </g>
+  </g>
+
+  <!-- ============================== bicycle ============================== -->
+
+  <g id="bicycle-rear-wheel">
+    <!-- tyre: a flat ink ring, outer 81, inner 65, so the rim is 16 wide -->
+    <path fill="#233047" fill-rule="evenodd"
+          d="M 406 324 A 81 81 0 1 1 405.9 324 Z M 406 340 A 65 65 0 1 0 406.1 340 Z"/>
+  </g>
+  <g id="bicycle-front-wheel">
+    <path fill="#233047" fill-rule="evenodd"
+          d="M 106 293 A 81 81 0 1 1 105.9 293 Z M 106 309 A 65 65 0 1 0 106.1 309 Z"/>
+  </g>
+
+  <g id="bicycle-frame">
+    <path fill="none" stroke="#233047" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"
+          d="M 106 374 L 152 306 L 261 400 L 406 405
+             M 152 306 L 176 290
+             M 174 296 L 356 328
+             M 261 400 L 378 310
+             M 406 405 L 382 320"/>
+    <path fill="none" stroke="#2E6FCD" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+          d="M 106 374 L 152 306 L 261 400 L 406 405
+             M 152 306 L 176 290
+             M 174 296 L 356 328
+             M 261 400 L 378 310
+             M 406 405 L 382 320"/>
+  </g>
+
+  <g id="bicycle-handlebar">
+    <path fill="none" stroke="#233047" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"
+          d="M 176 293 L 190 289 M 190 289 L 158 287 M 190 289 L 208 303"/>
+    <path fill="none" stroke="#2E6FCD" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+          d="M 176 293 L 190 289 M 190 289 L 158 287 M 190 289 L 208 303"/>
+  </g>
+
+  <g id="bicycle-hubs">
+    <circle cx="106" cy="374" r="18" fill="#FFD24A" stroke="#233047" stroke-width="12"/>
+    <circle cx="406" cy="405" r="18" fill="#FFD24A" stroke="#233047" stroke-width="12"/>
+  </g>
+
+  <g id="bicycle-saddle">
+    <rect x="360" y="302" width="76" height="30" rx="15" fill="#E94D73" stroke="#233047" stroke-width="12"/>
+  </g>
+
+  <g id="bicycle-grips">
+    <!-- two grips; each wing hand stops short so raspberry stays visible against sky -->
+    <rect x="126" y="265" width="48" height="30" rx="15" fill="#E94D73" stroke="#233047" stroke-width="12"
+          transform="rotate(-8 150 280)"/>
+    <rect x="188" y="287" width="48" height="30" rx="15" fill="#E94D73" stroke="#233047" stroke-width="12"
+          transform="rotate(18 212 302)"/>
+  </g>
+
+  <!-- ============================== pelican ==============================
+       Draw order inside the pelican matters.  The neck and the tail are drawn
+       BEFORE the body and the head, so only the part of each that sticks out
+       past them carries an ink edge.  That keeps the bird one large cream mass
+       at 64 pixels instead of a stack of separately outlined blobs.
+       ===================================================================== -->
+
+  <g id="pelican-wing-far">
+    <!-- the far wing is mostly behind the near wing; its hand and the grip read -->
+    <path fill="none" stroke="#233047" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"
+          d="M 210 276 L 176 282"/>
+    <path fill="none" stroke="#FFF1C9" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+          d="M 210 276 L 176 282"/>
+    <circle cx="176" cy="282" r="16" fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+  </g>
+
+  <g id="pelican-neck">
+    <!-- compressed: short in silhouette. 44 across, so 32 of cream survives the outline -->
+    <path fill="#FFF1C9" stroke="#233047" stroke-width="12" stroke-linejoin="round"
+          d="M 206 174 Q 206 234 248 256 Q 290 250 276 200 Q 246 180 228 168 Z"/>
+  </g>
+
+  <g id="pelican-tail">
+    <!-- tail low: the lobe leaves the rump downward and back -->
+    <path fill="#FFF1C9" stroke="#233047" stroke-width="12" stroke-linejoin="round"
+          d="M 330 344 Q 378 358 364 394 Q 326 404 304 372 Q 308 346 330 344 Z"/>
+  </g>
+
+  <g id="pelican-body">
+    <!-- forward lean: the body shape is rotated 16 deg forward of frame-upright -->
+    <ellipse cx="296" cy="296" rx="78" ry="56" fill="#FFF1C9" stroke="#233047" stroke-width="12"
+             transform="rotate(-16 296 296)"/>
+  </g>
+
+  <g id="pelican-head">
+    <circle cx="190" cy="144" r="70" fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+  </g>
+
+  <g id="pelican-shadow">
+    <!-- one flat shadow shape, no outline -->
+    <path fill="#E9C98A" d="M 252 322 Q 300 348 348 328 Q 336 356 288 352 Q 258 342 252 322 Z"/>
+  </g>
+
+  <g id="pelican-wing-near">
+    <!-- A1 rework: the near wing is drawn AFTER the body, so it is on the near side of the
+         bird where it belongs.  Cream on cream, so it reads by its own ink outline, and its
+         hand carries the second wing-on-grip contact at the near grip. -->
+    <path fill="#FFF1C9" stroke="#233047" stroke-width="12" stroke-linejoin="round"
+          d="M 318 284 Q 272 264 228 290 Q 216 298 222 308 Q 266 316 312 300 Q 326 290 318 284 Z"/>
+  </g>
+
+  <g id="pelican-pouch">
+    <!-- A4 rework.  The pouch is re-seated so its TOP edge is exactly the bill's lower
+         edge, control point for control point.  The pouch outline underneath is then
+         completely covered by the bill, so the bill-to-pouch join reads as ONE 12 unit
+         ink line instead of the 13.6 unit line two offset outlines used to make.  The
+         bowl is deeper as a result: 26.8 units at the 256 reference against 22.2, which
+         is nearer the agreed reference's own 32.1. -->
+    <path fill="#F6A14D" stroke="#233047" stroke-width="12" stroke-linejoin="round"
+          d="M 86 178 Q 90 226 142 252 Q 196 246 200 210 Q 136 174 86 178 Z"/>
+  </g>
+
+  <g id="pelican-bill">
+    <!-- aimed up the slope: the tip sits 20 units above the base over 120, +9 deg.
+         A4 rework: ONE control point on the lower edge moves, 140 188 to 136 174, so the
+         coral slab thins toward the reference's own proportions and the pouch gains the
+         depth.  Both END points are untouched, so the tip at 86 178 and the gape corner
+         at 200 210 do not move; the corner therefore stays inside the head outline ink
+         and no cream sliver opens between them. -->
+    <path fill="#F47B59" stroke="#233047" stroke-width="12" stroke-linejoin="round"
+          d="M 80 158 Q 138 138 194 158 Q 212 186 200 210 Q 136 174 86 178 Z"/>
+  </g>
+
+  <g id="pelican-face">
+    <!-- Route A of the section 5 side-view ruling: no brow arcs. The brow is
+         conditional in guide section 5, and two compliant brows cannot fit in
+         this head. See variations/variation-a.md, reading 6. -->
+    <!-- eye dots: diameter 12 = 6 units at 256, centres 54.2 apart = 27.1 at 256,
+         both centres above the upper-third line y=118.67 -->
+    <circle cx="160" cy="114" r="6" fill="#233047"/>
+    <circle cx="214" cy="109" r="6" fill="#233047"/>
+    <!-- mouth: one filled crescent, thickest in the middle, laid inside the POUCH
+         immediately under the bill-to-pouch join and following its curve.  A4 second
+         rework.  The mark used to sit inside the coral slab, 6.41 units clear of the join
+         and 6.65 clear of the bill's own top edge; equidistant between two lines, it read
+         as a crack in the middle of the bill.  It is now 6.50 units clear of the join and
+         11.91 clear of the next visible ink, so the join is its nearest neighbour by a
+         factor of 1.83, and it reads as the gape.  It is NOT laid on any outline, so the
+         outline width stays even.  6 units of mandatory clear gap plus a 6 unit outline
+         is why no separate mouth mark can come nearer than 12 units to the far side of
+         the join line; see variations/variation-a.md, readings 9 and 13. -->
+    <path fill="#233047" d="M 166 214 Q 148 206 124 200 Q 142 226 166 214 Z"/>
+  </g>
+
+  <g id="pelican-leg-near">
+    <path fill="none" stroke="#233047" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"
+          d="M 300 348 L 288 376 L 250 403"/>
+    <path fill="none" stroke="#FFF1C9" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"
+          d="M 300 348 L 288 376 L 250 403"/>
+  </g>
+
+  <g id="bicycle-drivetrain">
+    <!-- A2 and C1 rework.  Chainring 34/40 instead of 16/22.  Crank half length 31.05
+         instead of 39.8, so the near pedal cap clears the hill edge (C1).  The near foot
+         is drawn forward of the bottom bracket, so the ring is no longer buried under it.
+         The two crank arms are a plain 20 unit ink bar with no cobalt core: a core would
+         be 4 units at the 256 reference, under the 8 unit meaningful-shape floor, and it
+         would also cut the chainring face into two sub-floor cobalt slivers. -->
+    <circle cx="261" cy="400" r="34" fill="#2E6FCD" stroke="#233047" stroke-width="12"/>
+    <path fill="none" stroke="#233047" stroke-width="20" stroke-linecap="round" d="M 269 370 L 261 400 L 253 430"/>
+  </g>
+
+  <g id="bicycle-pedals">
+    <rect id="pedal-far"  x="246" y="354" width="46" height="32" rx="15" fill="#FFD24A" stroke="#233047" stroke-width="12"/>
+    <rect id="pedal-near" x="230" y="414" width="46" height="32" rx="15" fill="#FFD24A" stroke="#233047" stroke-width="12"/>
+  </g>
+
+  <g id="pelican-feet">
+    <rect id="foot-far"  x="244" y="315" width="46" height="32" rx="16" fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+    <rect id="foot-near" x="217" y="386" width="46" height="39" rx="16" fill="#FFF1C9" stroke="#233047" stroke-width="12"/>
+  </g>
+</svg>
