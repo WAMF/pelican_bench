@@ -1,2 +1,6 @@
 7cb7f6ad45d6743bedbe8d6c7ca941f0c671510a547ebaa3e8e7278824d42339  variations/variation-a.svg
 513b6923b8ba98642089d40fbfe404c5b15b82068ed820be68c7b3cfef1d24f4  variations/variation-b.svg
+f589837b37f07f753f71c5715f86f5240bbb763a2a120470f347908b4bd7cc8e  route-c/route-c-armature.svg
+d947883d94d7fdffc2bfd9943e5472245b308a25541b3367b87fda9b453a430c  route-c/route-c-block-in.svg
+cb7e07f4f1c590750de8ac408dc29e4c3a75ecaef542d4deca08c720e9f3454e  route-c/route-c-final.svg
+afb92bbbead9169602cc394d089207a44274abcf5f3f3d6eb92e35e49835ffed  route-c/route-c-fused.svg
